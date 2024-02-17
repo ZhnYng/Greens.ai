@@ -1,0 +1,21 @@
+stages:
+  - test
+  - deploy
+
+pytest:
+  stage: test
+  image: python:3.8
+  script:
+    - cd server
+    - pip install -r requirements.txt
+    - python -m pytest --junitxml=junit.xml
+  artifacts:
+    reports:
+      junit: server/junit.xml
+
+deployment:
+  stage: deploy
+  script:
+    - curl $RENDER_DEPLOY_HOOK
+  only:
+    - main

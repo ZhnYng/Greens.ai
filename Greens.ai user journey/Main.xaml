@@ -1,0 +1,257 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1730,2100" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1740,2035" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Greens.ai" sap:VirtualizedContainerService.HintSize="1678,1924" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1644,1706" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Make a prediction'" sap:VirtualizedContainerService.HintSize="1582,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://greens-ai.onrender.com/" CvElementArea="358, 765, 259, 52" CvTextArea="430, 783, 117, 17" CvTextArgument="Make a prediction" CvType="Button" DesignTimeRectangle="360, 767, 256, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Make a prediction'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='btn bg-purple-700 btn-wide hover:bg-purple-900 text-white text-md' aaname='Make a prediction' check:innerText='Make a prediction' /&gt;" Guid="bc2f872c-be75-4a13-8e45-18049906121a" InformativeScreenshot="b6d0cf761fe3510c8f04a1f2605e6c16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Upload'" sap:VirtualizedContainerService.HintSize="1582,1393" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,229" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Make predictions.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Make predictions.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1078,1134" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1016,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Login.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <uix:NCheckState DisplayName="Check App State 'Upload'" sap:VirtualizedContainerService.HintSize="1016,865" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,229" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Make predictions.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Make predictions.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="512,646" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Get access'" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_80" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://greens-ai.onrender.com/#/signin" DesignTimeRectangle="1538, 1537, 200, 96" DesignTimeScaleFactor="2" ElementType="Button" FriendlyName="'Get access'" FullSelectorArgument="&lt;webctrl aaname='Get access' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Get access' tag='BUTTON' type='' class='btn btn-outline border-purple-200 text-purple-200 &amp;#xD;&amp;#xA;                hover:bg-transparent hover:border-purple-300 hover:text-white' check:innerText='Get access' /&gt;" Guid="b5b6608f-9c86-4a79-8927-f602b37de78b" InformativeScreenshot="f77b0231b3471d659aaa6f10d9848676.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target DesignTimeRectangle="1168, 1561, 331, 48" ElementType="Text" FriendlyName="'Don't have an account?'" FullSelectorArgument="&lt;webctrl idx='3' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname='Don&amp;apos;t have an account?' check:innerText='Don&amp;apos;t have an account?' /&gt;" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <Sequence DisplayName="Sign up" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Text="test" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://greens-ai.onrender.com/#/signup" CvElementArea="822, 436, 291, 53" CvType="InputBox" DesignTimeRectangle="824, 439, 288, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'test'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='input w-full bg-white' aaname='' /&gt;" Guid="ed4a7e51-5297-4132-b7ab-008292a2837c" InformativeScreenshot="2d3b04eef988a879cae466eec335b914.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArea="822, 412, 74, 14" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="824, 407, 288, 24" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='mb-2 text-white' aaname='Username' check:innerText='Username' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Text="test@gmail.com" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://greens-ai.onrender.com/#/signup" CvElementArea="822, 528, 292, 53" CvType="InputBox" DesignTimeRectangle="824, 531, 288, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl name='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='email' tag='INPUT' type='text' class='input w-full bg-white' aaname='' /&gt;" Guid="2d47ed68-037a-4967-92a2-a5c77ed257f7" InformativeScreenshot="016e17cd5166ce3417592bcc3022e815.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArea="823, 503, 40, 15" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="824, 499, 288, 24" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='mb-2 text-white' aaname='Email' check:innerText='Email' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Text="Testingg1" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://greens-ai.onrender.com/#/signup" CvElementArea="822, 633, 290, 52" CvType="InputBox" DesignTimeRectangle="824, 635, 288, 48" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'Testingg1'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='input w-full bg-white' aaname='' /&gt;" Guid="5bdf436e-a655-45db-bd8e-025352c6b331" InformativeScreenshot="0b3a984bcf09ec32e4719c2053974d23.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArea="823, 607, 68, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="824, 603, 288, 24" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl idx='3' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='mb-2 text-white' aaname='Password' check:innerText='Password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create account!'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_81" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="83198f29-d3d4-46bd-86b5-29d2e532bf6b" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://greens-ai.onrender.com/#/signup" CvElementArea="837, 728, 263, 54" CvTextArea="912, 748, 111, 14" CvTextArgument="Create account!" CvType="Button" DesignTimeRectangle="840, 731, 256, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Create account!'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='w-64 h-12 bg-white hover:bg-gray-300 text-gray-700 rounded-full &amp;#xD;&amp;#xA;            shadow-lg hover:shadow-xl transition duration-300 ease-in-out' aaname='Create account!' check:innerText='Create account!' /&gt;" Guid="95f4ef20-baa2-4dc0-93c2-3fdbec71cfff" InformativeScreenshot="dba58b9bf34b33d82270b950602a5cc1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Login.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Make predictions.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Make predictions.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://greens-ai.onrender.com/#/predict" CvElementArea="1278, 725, 82, 51" CvTextArea="1296, 743, 48, 17" CvTextArgument="Upload" CvType="Button" DesignTimeRectangle="1280, 727, 80, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Upload'" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='btn bg-purple-700 text-white mr-2' aaname='Upload' check:innerText='Upload' /&gt;" Guid="ca9ebcdd-5a2e-43c2-a485-3955e0a972ce" InformativeScreenshot="44ea36b6e1ef3a937c2c6c6ba3c5e9ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://greens-ai.onrender.com/#/predict" CvElementArea="1278, 925, 82, 50" CvTextArea="1296, 943, 48, 17" CvTextArgument="Upload" CvType="Button" DesignTimeRectangle="1280, 927, 80, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Upload'" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='btn bg-purple-700 text-white mr-2' aaname='Upload' check:innerText='Upload' /&gt;" Guid="21c3e0ac-30a8-40bc-8c51-437a76f6efb1" InformativeScreenshot="44ea36b6e1ef3a937c2c6c6ba3c5e9ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -933, 1936, 1096" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="52e6fda794effc6d168e0394f49ab9a6.jpg" Selector="&lt;html app='chrome.exe' title='Greens.ai' /&gt;" Title="Greens.ai" Url="https://greens-ai.onrender.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
