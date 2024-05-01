@@ -16,6 +16,9 @@ The web application allows users to upload images of vegetables and receive pred
 - CI/CD pipeline for automated testing, model training, and deployment.
 - Monitoring and logging to track model performance and usage.
 
+## Screenshots
+See all screenshots of this webapp from "DevOps CA2 Lim Zhen Yang.pdf" in the repo
+
 ## Technologies Used
 
 - **Frontend**: React, TailwindCSS
